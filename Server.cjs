@@ -7,7 +7,9 @@ const app = express();
 app.use(express.json());
 
 // Connect to MongoDB
-const MONGO_URL = process.env.MONGO_URL || "mongodb://127.0.0.1:27017/LibraryDB";
+const MONGO_URL =
+  "mongodb+srv://jowinnadar7:2TTowSnskDV96XHP@cluster0.1lbdw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"; // Replace 'mydatabase' with your actual database name
+
 mongoose
   .connect(MONGO_URL)
   .then(() => {
